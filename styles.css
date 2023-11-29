@@ -21,7 +21,6 @@ body {
 .tablero {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 10px;
   background-color: var(--color-tablero);
   padding: 20px;
   border-radius: 10px;
@@ -31,4 +30,5 @@ body {
   height: 80px;
   border-radius: 50%;
   background-color: var(--color-celdas);
+  margin: 10px;
 }
