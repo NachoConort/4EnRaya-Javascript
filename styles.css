@@ -1,0 +1,34 @@
+:root {
+  --color-fondo: #99ff99;
+  --color-tablero: #000033;
+  --color-celdas: #ccccff;
+  --color-fichas-a: #ffff66;
+  --color-fichas-b: #ff3333;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-fondo);
+}
+.tablero {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  background-color: var(--color-tablero);
+  padding: 20px;
+  border-radius: 10px;
+}
+.celda {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--color-celdas);
+}
