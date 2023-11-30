@@ -1,5 +1,5 @@
 :root {
-  --color-fondo: #99ff99;
+  --color-fondo: #2c2c2c;
   --color-tablero: #000033;
   --color-celdas: #ccccff;
   --color-fichas-a: #ffff66;
@@ -36,4 +36,9 @@ body {
   border-radius: 50%;
   background-color: var(--color-celdas);
   margin: 5px;
+}
+@keyframes caida {
+  0% {
+    transform: translateY(-800%);
+  }
 }
