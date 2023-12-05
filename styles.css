@@ -1,0 +1,62 @@
+:root {
+  --color-tablero: #000033;
+  --color-fondo: #ccccff;
+  --color-fichas-a: #ffff66;
+  --color-fichas-b: #ff3333;
+  --color-ventana: #ffffff;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-fondo);
+}
+.tablero {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  background-color: var(--color-tablero);
+  padding: 20px;
+  border-radius: 10px;
+}
+.columna {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.celda {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--color-fondo);
+  margin: 5px;
+}
+@keyframes caida {
+  0% {
+    transform: translateY(-800%);
+  }
+}
+#ventana {
+  position: absolute;
+  display: none;
+  width: 300px;
+  height: 300px;
+  background-color: var(--color-ventana);
+  border-radius: 15px;
+}
+#texto-ganador {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 50px;
+}
+#btn-jugardenuevo {
+  padding: 10px 25px 10px 25px;
+  margin-top: 100px;
+  margin-left: 25%;
+}
