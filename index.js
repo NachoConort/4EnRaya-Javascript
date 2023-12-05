@@ -53,19 +53,14 @@ function actualizarPosicion(todasLasCeldas) {
 
 function evaluacionPosicion () {
   for(let i = 0; i < posicion.length; i++) {
-    if(posicion[i] === 1 && posicion[i+6] === 1 && posicion[i+12] === 1 && posicion[i+18] === 1) {
+    if(posicion[i] === 1 && posicion[i+6] === 1 && posicion[i+12] === 1 && posicion[i+18] === 1 || posicion[i] === 1 && posicion[i+5] === 1 && posicion[i+10] === 1 && posicion[i+15] === 1 || posicion[i] === 1 && posicion[i+7] === 1 && posicion[i+14] === 1 && posicion[i+21] === 1 || posicion[i] === 1 && posicion[i+1] === 1 && posicion[i+2] === 1 && posicion[i+3] === 1 && (i % 6) != 0 && (i+1) % 6 != 0 && (i+2) % 6 != 0 && (i+3) % 6 != 0) {
       setTimeout(() => {
         alert("Amarillo gana!");
       }, 600);
       break;
-    } else if (posicion[i] === 1 && posicion[i+5] === 1 && posicion[i+10] === 1 && posicion[i+15] === 1) {
+    } else if (posicion[i] === 2 && posicion[i+6] === 2 && posicion[i+12] === 2 && posicion[i+18] === 2 || posicion[i] === 2 && posicion[i+5] === 2 && posicion[i+10] === 2 && posicion[i+15] === 2 || posicion[i] === 2 && posicion[i+7] === 2 && posicion[i+14] === 2 && posicion[i+21] === 2 || posicion[i] === 2 && posicion[i+1] === 2 && posicion[i+2] === 2 && posicion[i+3] === 2 && (i % 6) != 0 && (i+1) % 6 != 0 && (i+2) % 6 != 0 && (i+3) % 6 != 0) {
       setTimeout(() => {
-        alert("Amarillo gana!");
-      }, 600);
-      break;
-    } else if(posicion[i] === 1 && posicion[i+7] === 1 && posicion[i+14] === 1 && posicion[i+21] === 1) {
-      setTimeout(() => {
-        alert("Amarillo gana!");
+        alert("Rojo gana!");
       }, 600);
       break;
     }
