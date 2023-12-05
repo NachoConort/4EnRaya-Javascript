@@ -1,7 +1,6 @@
 :root {
-  --color-fondo: #2c2c2c;
   --color-tablero: #000033;
-  --color-celdas: #ccccff;
+  --color-fondo: #ccccff;
   --color-fichas-a: #ffff66;
   --color-fichas-b: #ff3333;
   --color-ventana: #ffffff;
@@ -35,7 +34,7 @@ body {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background-color: var(--color-celdas);
+  background-color: var(--color-fondo);
   margin: 5px;
 }
 @keyframes caida {
